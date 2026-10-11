@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: "Instrument Sans", sans-serif;
+}
+
+/* Ring progress Hero  */
+@keyframes ringProgress {
+  from {
+    stroke-dasharray: 0 100;
+  }
+
+  to {
+    stroke-dasharray: 100 100;
+  }
+}
+
+.animate-ring-progress {
+  animation: ringProgress 5s linear forwards;
+}
+
+/* Dot Pulse  */
+@keyframes mashfaaDotPulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+.animate-mashfaa-dot {
+  animation: mashfaaDotPulse 2s ease-in-out infinite;
+}
